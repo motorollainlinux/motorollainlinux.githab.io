@@ -12,11 +12,12 @@
         <a-sky color="#00ffff"></a-sky>
         <a-plane color="#949292" height="2000" width="2000" rotation="-90 0 0"></a-plane>
         <a-light color="#ffffff" position="0 100 -10"></a-light>
-        <a-plane color="#fc5603" height="2" width="2" position="10 4 -3" onclick="BTN1"></a-plane>
+        <a-plane color="#fc5603" height="2" width="2" position="10 4 -3" id="BTN1" onclick="BTN1"></a-plane>
 
         <script>
-            function BTN1(this) {
-                this.pozition = "20 4 -3";
+            function BTN1() {
+                var This = document.querySelector('#BTN1');
+                This.pozition = "20 4 -3";
             }
         </script>
         <a-box color="#fa7900" position="10 1 15" height="3" width="3" depth="3" animation="property: rotation; to: 360 0 0; loop: true; dur: 10"></a-box>
